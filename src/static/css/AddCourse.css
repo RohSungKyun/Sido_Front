@@ -1,0 +1,85 @@
+.addcourse{
+    position: fixed;
+    top: 350px;
+    width: 1356px;
+    height:500vh;
+}
+
+.lecture{
+    position: absolute;
+    left: 71px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    
+    color: #000000;
+
+
+}
+
+.Classification{
+    position: absolute;
+    left: 220px;
+    background: #D9D9D9;
+    opacity: 0.6;
+    border-radius: 10px;
+    
+}
+
+select, .CourseName{
+    width: 200px;
+    height: 35px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.4);
+    border: none;
+
+}
+
+.English{
+    position: absolute;
+    left: 455px;
+    background: #D9D9D9;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+.CourseName{
+    position: absolute;
+    width: 190px;
+    height: 33px;
+    left: 690px;
+    
+    background: #D9D9D9;
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+.addButton{
+    position: absolute;
+    left: 920px;
+    border-radius: 15px;
+    width: 170px;
+    height: 34px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    
+    color: #000000;
+}
+
+
