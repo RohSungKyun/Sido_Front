@@ -6,38 +6,60 @@ a {
     text-decoration: none;
 }
 
+.addcourse_page{
+    max-width: 100%;
+}
 
 .navbar {
     position: fixed;
-    height: 35vh;
-    width: 1356px;
-    top: 0%;
+    display: flex;
+    height: 35%;
+    width: 100%;
     background: linear-gradient(180deg, #FF9D42 0%, rgba(255, 157, 66, 0.4375) 59.37%, rgba(255, 157, 66, 0) 100%);
     padding: 8px 20px;
 }
 
 .logout {
     position: absolute;
-    border-radius: 15px;
-    width: 90px;
-    right: 5vh;
-    top: 20px;
+    border-radius: 50px;
+    width: 8vw;
+    height: 4vh;
+    right: 5%;
+    top: 5%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1vw;
+    
+    
+    text-align: center;
+    cursor: pointer;
 }
 
 .navbar_menu ul{
-    position: fixed;
+    position: absolute;
+    height: 4vh;
+    width: 40vw;
     left: 50vh;
     top: 25vh;
     display: flex;
-    align-items: flex-end;  
-    padding: 6px 12px;
+    align-items: center;  
+  
     list-style: none;
     /*justify-content: space-between;*/
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1vw;
 }
 
 .navbar_menu li{
     color: rgba(0, 0, 0, 0.7);
-    padding: 5px 15px;
+    padding: 1vh 2rem;
+
+    
 }
 
 .navbar_menu li:hover{
@@ -49,9 +71,9 @@ a {
 .aco2{
     position: absolute;
     left: 10vh;
-    top: 9vh;
-    height: 150px;
-    width: 163px;
+    top: 12vh;
+    height: 19vh;
+    width: 11vw;
     
 }
 
@@ -59,4 +81,6 @@ a {
     position: absolute;
     left: 39vh;
     top: 25vh;
+    height: 6vh;
+    width: 4vw;
 }
