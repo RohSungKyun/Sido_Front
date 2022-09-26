@@ -15,13 +15,13 @@ function Navbar() {
                         <img className="icon" id="home" src="images\Vectorhome.png"/>
                     </NavLink>
                     <ul>
-                        <NavLink to="/average">
+                        <NavLink to="/average" className={({isActive})=>(isActive ? "selected": "not")}>
                             <li>평균취득학점</li>
                         </NavLink>
-                        <NavLink to="/AddCourse">
+                        <NavLink to="/AddCourse" className={({isActive})=>(isActive ? "selected": "not")}>
                             <li>수강강좌입력</li>
                         </NavLink>
-                        <NavLink to="/EditProfile">
+                        <NavLink to="/EditProfile" className={({isActive})=>(isActive ? "selected": "not")}>
                             <li>개인정보수정</li>
                         </NavLink>
                     </ul>
