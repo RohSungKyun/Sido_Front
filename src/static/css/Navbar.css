@@ -55,12 +55,7 @@ a {
     font-size: 1vw;
 }
 
-.navbar_menu li{
-    color: rgba(0, 0, 0, 0.7);
-    padding: 1vh 2rem;
 
-    
-}
 
 .navbar_menu li:hover{
     color: #FF9D42;
@@ -83,4 +78,15 @@ a {
     top: 25vh;
     height: 6vh;
     width: 4vw;
+}
+
+.selected{
+    color: #FF9D42;
+    padding: 1vh 2rem;
+}
+
+.not{
+    color: rgba(0, 0, 0, 0.7);
+    padding: 1vh 2rem;
+
 }

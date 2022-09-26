@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import "../static/css/AddCourse.css";
 function AddCourse() {
     const [selects, setSelects]=useState();
+    const selectList = [];
     return(
         <>
         <div className="addcourse_page">
