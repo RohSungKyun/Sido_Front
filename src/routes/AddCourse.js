@@ -2,8 +2,24 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import "../static/css/AddCourse.css";
 function AddCourse() {
-    const [selects, setSelects]=useState();
-    const selectList = [];
+    const classifications = [
+        "공통교양",
+        "전공필수",
+        "전공선택(기초)",
+        "전공선택(전문)",
+        "일반교양",
+        "학문기초"
+    ]
+    const [course, setCourse]=useState([]);
+    const [english, setEnglish]=useState([]);
+    const [courseName, setCourseName]=useState('');
+
+    const handleClick=()=>{
+
+        alert(course+", "+english+", "+courseName)
+    }
+    
+
     return(
         <>
         <div className="addcourse_page">
@@ -14,30 +30,25 @@ function AddCourse() {
                 </div>
                 
                 <div>
-                    <select className="Classification" value={selects} onChange={e=>setSelects(e.target.value)}>
-                    <option>분류</option>
-                        <option>공통교양</option>
-                        <option>전공필수</option>
-                        <option>전공선택(기초)</option>
-                        <option>전공선택(전문)</option>
-                        <option>일반교양</option>
-                        <option>학문기초</option>
+                    <select className="Classification" value={course} onChange={e=>setCourse(e.target.value)}>
+                        <option selected disabled>분류</option>
+                        {classifications.map(classification => <option value={classification}>{classification}</option>)}
                     </select>
                 </div>
 
                 <div>
-                    <select className="English">
-                    <option>영어강의여부</option>
+                    <select className="English" value={english} onChange={e=>setEnglish(e.target.value)}>
+                    <option selected disabled>영어강의여부</option>
                         <option value="O">O</option>
                         <option value="X">X</option>
                     </select>
                 </div>
 
                 <div>
-                    <input type="text" className="CourseName"/>
+                    <input type="text" className="CourseName" value={courseName} onChange={e=>setCourseName(e.target.value)}/>
                 </div>
 
-                <button type="button" className="addButton">추가하기</button>
+                <button type="button" className="addButton" onClick={handleClick}>추가하기</button>
             </div>
         </div>
         

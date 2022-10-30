@@ -14,6 +14,14 @@ function EditProfile() {
                     <input type="text" className="inputbox"/>
                     <span className="text2">학기</span>
                 </div>
+                <div>
+                    <span className="text3">영어성적 패스여부 : </span>
+                    <select className="Test">
+                        <option value="P">P</option>
+                        <option value="F">F</option>
+                    </select>
+                </div>
+
                 <div className="font">
                     <button type="button" className="changebtn">변경하기</button>
                 </div>
